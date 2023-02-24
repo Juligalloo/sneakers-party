@@ -10,7 +10,7 @@ if (usuario == "") {
 
 alert ("bienvenidos a nuestra pagina");
 
-let marca = prompt("ingresar marca al gusto")
+let marca = prompt("ingresar marca al gusto, ofrecemos Nike, Adidas, Jordan, Puma y Vans")
 
 switch (marca){
     case "nike":
@@ -31,8 +31,21 @@ switch (marca){
 
     default:
         console.log ("escogiste " +  "" + marca)
+
+    
 }
 
+if (marca == "") {
+    alert("le recomendamos que escoga una marca de las que presentamos")
+} else{
+    document.write(" , exelente decision, usted ha escogido " + marca)
+}
+ 
+function elegir (marca, talle) {
+    console.log (usuario + " ha escogido unas " + marca + " de talle " + talle)
+}
 
-
-
+let talle = Number (prompt("¿Que talle estaria buscando, tenemos del 37 al 42. Trabajamos con talles US"))
+    
+elegir(marca, talle)
+ 
